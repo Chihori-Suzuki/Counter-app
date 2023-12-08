@@ -15,10 +15,13 @@ const config = {
       fallback: "error.html",
       pages: "build",
       assets: "build",
-      fallback: undefined,
       precompress: false,
       strict: false,
     }),
+    files: {
+      assets: "static",
+      lib: "src/lib",
+    },
   },
 };
 
