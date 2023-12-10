@@ -17,6 +17,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>Multiple Counter</title>
+</svelte:head>
+
 <div class="flex flex-col items-center">
   <h1 class="text-6xl m-6">Multiple Counter</h1>
 
