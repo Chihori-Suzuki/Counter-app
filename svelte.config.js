@@ -12,7 +12,7 @@ const config = {
     adapter: adapter({
       // default options are shown. On some platforms
       // these options are set automatically — see below
-      fallback: "error.html",
+      fallback: "index.html",
       pages: "build",
       assets: "build",
       precompress: false,
