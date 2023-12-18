@@ -6,13 +6,13 @@
     count += 1;
   };
   const decrement = (): void => {
-    count -= 1;
+    count > 0 ? (count -= 1) : (count = 0);
   };
   const clear = (): void => {
     count = 0;
   };
-  const changeTitle = (title: string): void => {
-    title = title;
+  const changeTitle = (newTitle: string): void => {
+    title = newTitle;
   };
 </script>
 
@@ -24,7 +24,7 @@
     on:change={() => changeTitle(title)}
     class="text-gray-600 ml-4 px-1 w-32"
   />
-  <p class="text-lg font-bold px-4 centerize">{count}</p>
+  <p class="text-lg font-bold px-4">{count}</p>
   <div class="flex">
     <button
       on:click={increment}
